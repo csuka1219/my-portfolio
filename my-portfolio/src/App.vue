@@ -5,6 +5,7 @@
     <div class="parent">
       <MyAbout id="about" :nightMode="nightMode"/>
       <MyResume id="resume" :nightMode="nightMode"/>
+      <MyProjects id="projects" :nightMode="nightMode"></MyProjects>
     </div>
   </div>
 </template>
@@ -13,6 +14,7 @@
 
 import MyAbout from "./components/MyAbout.vue";
 import MyNavbar from "./components/MyNavbar.vue"
+import MyProjects from "./components/MyProjects.vue";
 import MyResume from "./components/MyResume.vue";
 
 export default {
@@ -20,7 +22,8 @@ export default {
   components: {
     MyNavbar,
     MyAbout,
-    MyResume
+    MyResume,
+    MyProjects
 },
   data(){
     return{

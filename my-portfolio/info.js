@@ -23,7 +23,7 @@ let info = {
         name: "University of Debrecen",
         place: "Hungary",
         date: "Sep 2021 - Present",
-        degree: "Bachelor of Science, Computer Software Engineering",
+        degree: "Bachelors in Computer Science Engineering",
         description:
           "",
         skills: [

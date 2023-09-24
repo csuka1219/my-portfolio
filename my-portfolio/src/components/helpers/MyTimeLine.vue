@@ -11,7 +11,7 @@
               data-aos-mirror="true"
               data-aos-duration="1000"
             >
-              {{ data.title }}
+              {{ data.title.toUpperCase() }}
             </p>
             <ul
               class="timeline m-0 pt-1"
