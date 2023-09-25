@@ -1,6 +1,6 @@
 <template>
     <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="pt-5 p-st">
-        <div class="container">
+        <div class="container" style="padding-bottom: 30px;">
             <div
         class="text-center"
         data-aos="fade"
@@ -17,7 +17,8 @@
           :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
         />
             </div>
-            <div class="project-cards mt-4" v-for="project in projects" :key="project.title">
+            <div class="project-cards mt-4" v-for="(project,index) in projects" :key="project.title">
+              <hr v-if="index>0" :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"/>
                 <div class="row data-card">
                     <div class="data-card-media col-xl-3 col-bg-3 col-md-3 col-sm-5">
                         <div class="about-image svg image-container">
@@ -36,7 +37,6 @@
                             </p>
                         </div>
                         <div class="data-card-tags">
-                            <!-- todo -->
                             <span class="badge p-2 mb-2 mt-2" v-for="tag in project.tags"
                             :key="tag" :class="{ 'bg-dark2': nightMode }"
                             style="margin-right: 8px;">
@@ -45,9 +45,6 @@
                         </div>
                     </div>
                 </div>
-                <hr
-          :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
-        />
             </div>
         </div>
     </div>

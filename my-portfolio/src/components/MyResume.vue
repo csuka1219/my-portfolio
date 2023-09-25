@@ -1,6 +1,6 @@
 <template>
     <div
-      class="py-4 p-st"
+      class="py-4 p-st pt-5"
       :class="{
         'bg-light': !nightMode,
         'bg-dark2': nightMode,
@@ -16,7 +16,7 @@
         <span
             class="title text-center"
             :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >Resume</span
+            >RESUME</span
           >
       </div>
         <hr
