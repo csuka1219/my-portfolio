@@ -61,6 +61,32 @@ let info = {
       },
   
     ],
+    projects: [
+      {
+        title:"Flutter_League",
+        description: "Flutter League is a companion app for League of Legends players that allows them to search for summoners, view their stats and match history, and check currently ongoing games.",
+        tags: ["Flutter", "Dart", "API"],
+        media: require("./src/assets/FlutterLeagueImg.png"),
+      },
+      {
+        title:"SignalR_BlazorChess",
+        description: "SignalR_BlazorChess is a multiplayer chess application built using Blazor Server, MudBlazor for the UI components, and SignalR for enabling real-time multiplayer functionality. This application allows chess enthusiasts to play against each other in a virtual environment and enjoy the strategic and intellectual challenges that the game of chess offers",
+        tags: ["Blazor", "C#", "OOP"],
+        media: require("./src/assets/SignalRBlazorChessImg.png"),
+      },
+      {
+        title:"android-adb-picture-puller",
+        description: "The \"android-adb-picture-puller\" is a Python script that allows users to easily pull pictures and videos from an Android device to their local machine using Android Debug Bridge (ADB). The script leverages the \"ppadb\" library to interact with ADB, making it compatible with various Android devices.",
+        tags: ["Python3", "Adb", "Android"],
+        media: require("./src/assets/PythonAndroidImg.png"),
+      },
+      {
+        title:"my-portfolio",
+        description: "It's my portfolio page made with vuejs",
+        tags: ["JavaScript", "Vue", "Bootstrap"],
+        media: require("./src/assets/MyPortfolioImg.png"),
+      }
+    ]
   };
   
   export default info;

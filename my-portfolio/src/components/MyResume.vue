@@ -5,16 +5,20 @@
         'bg-light': !nightMode,
         'bg-dark2': nightMode,
         'text-light': nightMode,
-      }"
-    >
+      }">
       <div class="container">
         <div
-          class="text-center"
-          data-aos="fade"
-          data-aos-once="true"
-          data-aos-duration="1000"
+        class="text-center"
+        data-aos="fade"
+        data-aos-once="true"
+        data-aos-duration="1000"
         >
-        </div>
+        <span
+            class="title text-center"
+            :class="{ pgray: !nightMode, 'text-light': nightMode }"
+            >Resume</span
+          >
+      </div>
         <hr
           width="50%"
           :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
