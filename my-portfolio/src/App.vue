@@ -3,10 +3,10 @@
     <MyNavbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode"></MyNavbar>
 
     <div class="parent">
-      <MyAbout id="about" :nightMode="nightMode"/>
-      <MyResume id="resume" :nightMode="nightMode"/>
-      <MyProjects id="projects" :nightMode="nightMode"></MyProjects>
-      <MyContact id="contact" :nightMode="nightMode"></MyContact>
+      <MyAbout id="About" :nightMode="nightMode"/>
+      <MyResume id="Resume" :nightMode="nightMode"/>
+      <MyProjects id="Projects" :nightMode="nightMode"></MyProjects>
+      <MyContact id="Contact" :nightMode="nightMode"></MyContact>
     </div>
   </div>
 </template>
@@ -43,9 +43,10 @@ export default {
     },
     scrollTo(ele) {
       if (ele == "home") {
-        var elementPosition = document.getElementById("about").offsetTop;
+        var elementPosition = document.getElementById("About").offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
       } else {
+        console.log(ele);
         elementPosition = document.getElementById(ele).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
       }
