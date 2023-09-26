@@ -32,7 +32,7 @@
   
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item mx-2" v-for="navlink in navLinks" :key="navlink">
+              <li class="nav-item mx-2" style="text-align: center;" v-for="navlink in navLinks" :key="navlink">
                 <a
                   class="nav-link"
                   href="/{{navlink}}"
@@ -41,7 +41,7 @@
                   >{{navlink}}</a
                 >
               </li>
-              <li class="nav-item ml-2">
+              <li class="nav-item ml-2" style="text-align: center;">
                 <a
                   class="nav-link"
                   href="#"
@@ -77,7 +77,7 @@
     data() {
       return {
         navbarConfig: info.config.navbar,
-        navLinks: ["about", "resume", "projects", "contact"],
+        navLinks: ["About", "Resume", "Projects", "Contact"],
       };
     },
     components: {

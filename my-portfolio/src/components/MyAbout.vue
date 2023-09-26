@@ -52,20 +52,19 @@
         socialLinks: [
           {
             name: "linkedin",
-            color: "#0a66c2"
+            color: "#0a66c2",
+            url: "https://www.linkedin.com/in/balázs-csuka-450599213/" 
           },
           {
             name: "github",
-            color: "#242c34"
+            color: "#242c34",
+            url: "https://github.com/csuka1219" 
           },
           {
             name: "codersrank",
-            color: "#128C7E"
+            color: "#128C7E",
+            url: "https://profile.codersrank.io/user/csuka1219"
           },
-          {
-            name: "facebook",
-            color: "#2753a7"
-          }
         ]
       };
     },
