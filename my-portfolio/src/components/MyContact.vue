@@ -64,16 +64,6 @@
   
           <button class="button"> Button
           </button>
-          <!-- <button
-            @click.prevent="sendEmail"
-            class="mt-1 btn mb-3"
-            data-aos="fade"
-            data-aos-once="true"
-            data-aos-duration="1000"
-            data-aos-offset="50"
-          >
-            Send
-          </button> -->
         </div>
   
         <!-- <Snackbar
@@ -115,7 +105,7 @@ export default {
 .wave-group {
   position: relative;
   margin: 0 auto;
-  width:50%;
+  width: 65%;
 }
 
 .wave-group .input {
