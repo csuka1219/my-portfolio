@@ -15,7 +15,7 @@
               <button v-for="socialLink in socialLinks" :key="socialLink.name"
                   :class="'btn btn-outline-secondary mx-2 socialContainer ' + socialLink.name"
                   style="padding: 0;"
-                  @click="open(socialLink.name)"
+                  @click="openInNewTab(socialLink.url)"
                   v-tooltip.bottom="'socialLink'"
                   >
                   <img class="socialSvg" :src="require(`@/assets/social/${socialLink.name}.svg`)">
@@ -41,7 +41,10 @@
         type: Boolean,
       },
     },
-    components:{
+    methods:{
+      openInNewTab(url) {
+        window.open(url, '_blank', 'noreferrer');
+      },
     },
     name: "MyAbout",
     data() {
