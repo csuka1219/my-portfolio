@@ -43,8 +43,8 @@ let info = {
     experience: [
   
       {
-        name: "Software Developer",
-        place: "CTS-Informatika Kft, Hungary",
+        name: "CTS-Informatika Kft",
+        place: "Hungary",
         date: "Jun, 2021 - Present",
         position: "Software Developer",
         description:
