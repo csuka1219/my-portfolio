@@ -5,7 +5,7 @@
         :class="{ pgray: !nightMode, 'text-light': nightMode }"
         >{{ name }}</span
       >
-      <span class="logo-title-dot pblue">{{ dot }}</span>
+      <span class="logo-title-dot" style="color: #5264AE;">{{ dot }}</span>
     </div>
   </template>
   

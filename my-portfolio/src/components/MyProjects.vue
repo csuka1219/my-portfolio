@@ -28,7 +28,9 @@
                     <div class="data-card-content col-xl-9 col-bg-9 col-md-9 col-sm-7">
                         <div class="data-card-header">
                             <div class="data-card-title">
-                                <span>{{ project.title }}</span>
+                                <span><a style="color: inherit;" :href="'https://github.com/csuka1219/'+project.title" target="_blank">
+                                  {{ project.title }} 
+                                </a></span>
                             </div>
                         </div>
                         <div class="data-card-description mt-2">

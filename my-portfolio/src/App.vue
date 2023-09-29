@@ -30,15 +30,11 @@ export default {
 },
   data(){
     return{
-      nightMode: false
+      nightMode: true
     }
   },
   methods:{
     switchMode(mode) {
-      console.log("vuekuki");
-      // if (this.config.use_cookies) {
-      //   this.$cookie.set("nightMode", mode);
-      // }
       this.nightMode = mode;
     },
     scrollTo(ele) {
