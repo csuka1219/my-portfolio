@@ -31,12 +31,13 @@
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-duration="1000">
-            <div class="wave-group" v-for="data in contactFormData" :key="data" style="padding-bottom: 20px;">
-              <input required="" type="text" class="input">
+            <div class="wave-group" v-for="data in contactFormData" :key="data.label" style="padding-bottom: 20px;">
+              <input required="" v-model="data.value" type="text" :class="{'input':true,
+              'text-light': nightMode}">
               <span class="bar"></span>
               <label class="label">
-                <span class="label-char" v-for="i in (data.length + 1)" style="--index: (i-1)" :key="i-1">
-                  {{data.charAt(i-1)}}
+                <span class="label-char" v-for="i in (data.label.length + 1)" style="--index: (i-1)" :key="i-1">
+                  {{data.label.charAt(i-1)}}
                 </span>
               </label>
             </div>
@@ -50,8 +51,9 @@
           >
           <div class="wave-group" style="padding-bottom: 20px;">
               <textarea required="" name="message"
-              v-model="text"
-              class="input"
+              v-model="message"
+              :class="{'input':true,
+              'text-light': nightMode}"
               rows="4" />
               <span class="bar"></span>
               <label class="label">
@@ -61,8 +63,9 @@
               </label>
             </div>
           </div>
-  
-          <button class="button"> Button
+          <button
+          @click.prevent="sendEmail"
+           class="button"> Button
           </button>
         </div>
   
@@ -78,6 +81,9 @@
 
 <script>
 
+import config from "../../config";
+import emailjs from "emailjs-com";
+
 export default {
   name: "MyContact",
   props: {
@@ -87,8 +93,53 @@ export default {
   },
   data(){
     return{
-      contactFormData:["Name", "Email", "Subject"],
+      message: "",
+      contactFormData:[{
+        label: "Name",
+        value: ""
+      },
+      {
+        label: "Email",
+        value: ""
+      },
+      {
+        label: "Subject",
+        value: ""
+      }
+    ],
       messageString: "Message",
+    }
+  },
+  methods: {
+    sendEmail() {
+      var emailData = {
+        from_name: this.contactFormData[0].value,
+        user_email: this.contactFormData[1].value,
+        subject: this.contactFormData[2].value,
+        message: this.message,
+      };
+      if(Object.values(emailData).every(x => x === null || x === '')){
+        console.log("Nope");
+        //TODO
+      }
+      else{
+        emailjs
+          .send(
+            config.emailjs.serviceID,
+            config.emailjs.templateID,
+            emailData,
+            config.emailjs.userID
+          )
+          .then(
+            () => {
+              this.contactFormData.forEach((e)=>e.value="");
+              this.message = "";
+            },
+            () => {
+              //TODO
+            }
+          );
+      }
     }
   }
 };
