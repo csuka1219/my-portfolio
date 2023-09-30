@@ -7,6 +7,7 @@
       <MyResume id="Resume" :nightMode="nightMode"/>
       <MyProjects id="Projects" :nightMode="nightMode"></MyProjects>
       <MyContact id="Contact" :nightMode="nightMode"></MyContact>
+      <MyFooter id="Footer" :nightMode="nightMode"></MyFooter>
     </div>
   </div>
 </template>
@@ -15,6 +16,7 @@
 
 import MyAbout from "./components/MyAbout.vue";
 import MyContact from "./components/MyContact.vue";
+import MyFooter from "./components/MyFooter.vue";
 import MyNavbar from "./components/MyNavbar.vue"
 import MyProjects from "./components/MyProjects.vue";
 import MyResume from "./components/MyResume.vue";
@@ -26,7 +28,8 @@ export default {
     MyAbout,
     MyResume,
     MyProjects,
-    MyContact
+    MyContact,
+    MyFooter
 },
   data(){
     return{
