@@ -9,7 +9,7 @@ let info = {
       }
     },
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus semper nisi sit amet tincidunt. Aliquam erat volutpat. Donec luctus, nunc posuere malesuada facilisis, magna dolor pellentesque metus, eu sollicitudin ante augue nec erat. Nullam aliquam luctus nulla, nec porta purus dictum vitae. Integer vel rutrum turpis.",
+      "I am Balázs Csuka, a third-year student of Computer Engineering at the University of Debrecen. Besides my studies I work as a software developer at CTS Informatika Kft. My passion is programming, which I try to improve continuously.",
     education: [
       {
         name: "DSZC Beregszászi Pál",
@@ -48,7 +48,7 @@ let info = {
         date: "Jun, 2021 - Present",
         position: "Software Developer",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus semper nisi sit amet tincidunt. Aliquam erat volutpat. Donec luctus, nunc posuere malesuada facilisis, magna dolor pellentesque metus, eu sollicitudin ante augue nec erat. Nullam aliquam luctus nulla, nec porta purus dictum vitae. Integer vel rutrum turpis.",
+          "I currently work here as a software developer. My responsibilities include developing new projects in .NET web frameworks, maintaining and supporting previous software, assisting new colleagues. During my work I gained valuable experiences in areas such as constant communication with clients, managing multiple tasks running in parallel at the same time, and I gained insight into the day-to-day operations of a company.",
           skills: [
             "C#",
             "Blazor",

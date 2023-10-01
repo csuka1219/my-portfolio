@@ -8,7 +8,7 @@
         <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
           <div class="about-text">
             <h1 class="text-holder">
-              <span class="mr-2 welcome-text">Hey folks!</span>
+              <span class="mr-2 welcome-text">Hello guys!</span>
             </h1>
             <p>{{description}}</p>
             <div class="pb-4 col-md-10 mt-4" style="padding-left: 0;">

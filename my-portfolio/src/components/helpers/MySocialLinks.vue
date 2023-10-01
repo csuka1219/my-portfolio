@@ -46,7 +46,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .socialContainer {
   width: 45px;
   height: 45px;
