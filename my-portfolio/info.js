@@ -48,7 +48,7 @@ let info = {
         date: "Jun, 2021 - Present",
         position: "Software Developer",
         description:
-          "I currently work here as a software developer. My responsibilities include developing new projects in .NET web frameworks, maintaining and supporting previous software, assisting new colleagues. During my work I gained valuable experiences in areas such as constant communication with clients, managing multiple tasks running in parallel at the same time, and I gained insight into the day-to-day operations of a company.",
+          "I currently work here as a software developer. My responsibilities include developing new projects in .NET web frameworks, maintaining and supporting previous softwares, assisting new colleagues. During my work I gained valuable experiences in areas such as constant communication with clients, managing multiple tasks running in parallel at the same time, and I gained insight into the day-to-day operations of a company.",
           skills: [
             "C#",
             "Blazor",
